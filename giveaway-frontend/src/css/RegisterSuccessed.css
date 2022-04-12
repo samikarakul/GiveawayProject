@@ -1,0 +1,24 @@
+.registerSuccessedDiv{
+    width: 50vw;
+    height: 50vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border: none;
+    border-radius: 25px;
+    background-color: #9efeba;
+    display: block;
+    position: absolute;
+    transform: rotateY(0deg);
+}
+
+.hide{
+    transform: rotateY(90deg);
+}
+
+h2{
+    font-size: 3vw;
+    margin-top: 50px;
+}
+h3{
+    font-size: 1.8vw;
+}

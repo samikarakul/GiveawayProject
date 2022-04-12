@@ -1,0 +1,35 @@
+.hide{
+    display: none;
+}
+.loginFailMessage-container{
+    background-color: orange;
+    color: #fff;
+    display: flex;
+    border: none;
+    border-radius: 10px;    
+    width: 58vw;
+    animation: flipX 1s;
+}
+.loginFailMessage-container span{
+    margin-top: 1vh;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginFailMessage-container h3{
+    margin-left: 1vw;
+}
+.loginFailMessage-container span img{
+    margin:0;
+    width: 2.3vw;
+}
+
+@keyframes flipX {
+    0%{
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}

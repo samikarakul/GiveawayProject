@@ -1,0 +1,32 @@
+.hide{
+    display: none;
+}
+.fullsizeModal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    top: -10vh;
+    left: -25vw;
+}
+.fullsizeModal-innerDiv{
+    background-color: #000;
+    padding-bottom: 5vh;
+    position: absolute;
+}
+.fullsizeModal-opacityDiv{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.9;
+    z-index: -1;
+}
+#fullsizeImg{
+    margin-top: 5vh;
+    width: 75vw;
+    height: 65vh;
+}

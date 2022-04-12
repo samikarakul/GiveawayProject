@@ -1,0 +1,124 @@
+.red{
+    border: 2px solid red;
+}
+
+.giveawayEdit-container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+    
+    position: absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width: 100vw;
+}
+
+.editForm-containerDiv{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+    
+    position: absolute;
+    top: 10vh;
+    left: 25vw;
+}
+
+.giveawayEdit-container img{
+    width: 35vw;
+    height: 20vh;
+    transition: opacity 0.5s ease;
+}
+.imageWrapDiv:hover img{
+    opacity: 0.1;
+}
+.imageWrapDiv:hover .imageWrap{
+    opacity: 1;
+}
+.imageWrapDiv:hover, .imageWrap:hover, img:hover{
+    cursor: pointer;
+}
+.giveawayEdit-container .imageWrap{
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 20vh;
+    transform: translate(0%,-110%);
+    transition: opacity 0.5s ease;
+}
+.giveawayEdit-form input, select{
+    box-shadow: 2px 1px 5px 2px black;
+
+}
+.giveawayEdit-form input, select, .fileSpan{
+    display: block;
+    width: 50vw;
+    margin-top: 4vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    border: none;
+    outline: none;
+    transition: all ease .5s;
+}
+.giveawayEdit-form input[type=file]{
+    display: none;
+}
+.giveawayEdit-form input:focus, select:focus{
+    box-shadow: 1px .6px 2px 1px black;
+}
+.giveawayEdit-form select{
+    width: 50vw;
+}
+
+.fileSpan{
+    color: #fff;
+    background-color: #1ec0b6;
+    margin-top: 2vh;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px #547288;
+}
+.fileSpan:hover{
+    box-shadow: 1px 1px 1px 2px #547288;
+    font-size: large;
+}
+.giveawayEdit-form button{
+    border: none;
+    border-radius: 50px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    box-shadow: 2px 1px 5px 2px #18746d;
+    background-color: #5ae6dc;
+    transition: all .3s ease;
+}
+.giveawayEdit-form button:hover{
+    box-shadow: 1px .6px 2px 1px #18746d;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    .editForm-containerDiv{
+        left: 10vw;
+
+    }
+    
+    .giveawayEdit-form input, select{
+        width: 70vw;
+        font-size: 2vw;
+    }
+
+    .giveawayEdit-form select{
+        width: 70vw;
+    }
+}

@@ -1,0 +1,34 @@
+.registerButton{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.wheel-img:hover{
+    animation: roundz 2s infinite;
+}
+
+span:hover ~ .wheel-img{
+    animation: roundz 2s infinite;
+}
+.wheel-img{
+    margin:0;
+    padding: 0;
+    width: 140px;
+    height: 105px;
+    z-index: 0;
+}
+
+.registerButton span{
+    font-size: 20px;
+    position: absolute !important;
+    transform: translateY(-15%);
+    z-index: 100;
+}
+@keyframes roundz {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}

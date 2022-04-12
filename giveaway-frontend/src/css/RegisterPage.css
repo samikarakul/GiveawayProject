@@ -1,0 +1,114 @@
+.registerPage-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4vh;
+}
+
+.registerPage-backgroundImg{
+    width: 100vw;
+    height: 96vh;
+    filter:brightness(45%);
+}
+.registerPage-title{
+    position: absolute;
+    top: 6vh;
+    color: #fff;
+}
+
+.registerFormContainer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: absolute;
+    top: 20vh;
+    left: 25%;
+  }
+  
+.registerFormDiv{
+  border: none;
+  border-radius: 50px;
+  width: 50vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 3vh;
+  padding-bottom: 10vh;
+  box-shadow: 1px 1px 10px 10px black;
+  transform: rotateY(0deg);
+  transition: all ease-in 1s;
+}
+.registerForm-form input{
+  display: block;
+  width: 40vw;
+  height: 6vh;
+  padding: 10px;
+  font-size: 2.3vw;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.registerForm-form *{
+  margin-top: 5vh;
+}
+
+.errorMsg{
+  color: #eee;
+  font-size: 20px;
+}
+.error-div{
+  animation: error-response 0.5s;
+}
+
+.hideForm{
+  transform: rotateY(90deg);
+  transition: all ease-in 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .registerFormContainer{
+      top: 15vh;
+      left: 10%;
+    }
+  .registerPage-title{
+      font-size: 3vh;
+  }
+  .registerFormDiv{
+    width: 70vw;
+  }
+  .registerForm-form{
+    margin-left: 3vw;
+  }
+  .registerForm-form input{
+    width: 55vw;
+    height: 4vh;
+    padding: 10px;
+    font-size: 2.3vw;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+  
+}  
+
+  
+  
+@keyframes error-response {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  25%{
+    transform: rotateZ(-3deg);
+  }
+  50%{
+    transform: rotateZ(3deg);
+  }
+  75%{
+    transform: rotateZ(-3deg);
+  }
+  100%{
+    transform: rotateZ(0deg);
+  }
+}
+
+

@@ -1,0 +1,42 @@
+.giveaway-container{
+    z-index: -1;
+}
+.giveaway-container img{
+    margin:0;
+    width: 100vw;
+    height: 40vh;
+    filter: brightness(70%);
+}
+.giveaway-container h1{
+    position: absolute;
+    left: 40vw;
+    font-size: 4vh;
+    color: #fff;
+    z-index: 10;
+}
+.giveaway-container button{
+    position: absolute;
+    float: right;
+    transform: translate(-150%,25vh);
+    width: 20vw;
+    padding: 2vw;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    border: none;
+    color: #fff;
+    z-index: 10;
+}
+.giveaway-container button a{
+    color: #fff !important;
+    text-decoration: none;
+}
+.giveaway-container button:hover{
+    background-color:rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .giveaway-container h1{
+        left: 30vw;
+        font-size: 2vh;
+    }
+}

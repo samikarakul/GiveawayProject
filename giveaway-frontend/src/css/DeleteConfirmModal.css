@@ -1,0 +1,70 @@
+.hide{
+    display: none;
+}
+.deleteConfirmModal-container{
+    position: absolute;
+    top: -10vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.confirmGray{
+    position: absolute;
+    background-color: black;
+    opacity: 0.2;
+    width: 100vw;
+    height: 100vh;
+}
+.confirmWhite{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 50px;
+}
+.confirmWhite h1{
+    font-size: 3vh;
+}
+
+.confirmButtons{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+}
+.confirmButtons button{
+    width: 20%;
+    padding: 2%;
+    font-size: 4vh;
+    margin: 5%;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 3px black;
+}
+.confirmButtons button:hover{
+    box-shadow: 1px 1px 2px 1px black;
+}
+#confirmButton-yes{
+    background-color: green;
+}
+#confirmButton-no{
+    background-color: red;
+}
+@media screen and (max-width: 600px) {
+    .deleteConfirmModal-container{
+        top: -10vh;
+        left: 0vw;
+    }
+    .confirmWhite{
+        left: 5vw;
+        top: 10vh;
+        width: 85%;
+        height: 50%;
+    }
+    .confirmButtons button{
+        width: 35%;
+    }
+}

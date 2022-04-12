@@ -1,0 +1,89 @@
+.tableList-container{
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    padding-left: 10vw
+}
+.prizeList-container{
+    padding-left: 25vw;
+}
+table{
+    border-spacing: 1vw 1vh;
+}
+td{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 2vh;
+    background-color: #229c98;
+    color: #fff;
+    border: none;
+}
+th{
+    border: none;
+    border-bottom: 1px solid brown;
+    max-width: 10vw;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.td-button{
+    cursor: pointer;
+    box-shadow: 0.2vw 0.2vh 0.3vh 0.2vh black, -0.2vw 0px 1vh 0.1vh black;
+    transition: all .3s ease;
+}
+.td-button:hover{
+    box-shadow: 1px 1px 3px 2px black, 0px 0px 1px 1px black;
+}
+
+.prizeList-prizeImg{
+    padding:0;
+    font-size: 0;
+}
+.prizeList-prizeImg img{
+    width: 10vw;
+    height: 10vh;
+}
+
+.newPrizeModal-openButton{
+    background-color: #4dea29;
+    color: #fff;
+    position: fixed;
+    left: 3vh;
+    top: 35%;
+    font-size: 1.8vw;
+    border: none;
+    border-radius: 50px;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    box-shadow: 1px 1px 3px 2px #349a43;
+}
+.buttonZindex{
+    z-index: -1;
+}
+.newPrizeModal-openButton:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+    .tableList-container{
+        padding-left: 0;
+    }
+    .prizeList-container{
+        padding-left: 25vw;
+    }
+    th{
+        font-size: 1vh;
+    }
+    td{
+        font-size: 1vh;
+    }
+    .prizeList-prizeImg img{
+        width: 100%;
+        height: 5vh;
+    }
+}
+

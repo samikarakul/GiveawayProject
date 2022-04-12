@@ -1,0 +1,73 @@
+.controlHome-container{
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
+}
+.controlHome-form{
+    width: 60vw;
+    height: 40vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 4px #2a8985;
+}
+
+.controlHome-form *{
+    display: block;
+    margin-top: 2vh;
+    margin-left: 10%;
+}
+.controlHome-form input{
+    width: 40vw;
+    height: 6vh;
+    font-size: 1.8vh;
+    padding-left: 1vw;
+    outline: none;
+    color: #fff;
+    background-color: #3f5152;
+}
+
+.controlHome-form input::placeholder {
+    color: #fff;
+}
+
+
+.controlHome-form input:focus{
+    width: 41vw;
+    height: 7vh;
+    transition: ease-in .3s;
+}
+
+.controlHome-form button{
+    margin-top: 5vh;
+    border: none;
+    background-color: #1e8e87;
+    padding: 0;
+    transition: all ease-in 0.2s;
+    display: inline;
+    cursor: pointer;
+}
+.controlHome-form button span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #30e4d9;
+    width: 100px;
+    height: 40px;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 3px 7px;
+    text-align: center;
+    font-size: 20px;
+    transform: translate(2px,-5px);
+    transition: all ease-in 0.2s;
+}
+
+.controlHome-form button:hover span{
+    transform: translate(1px,-2px);
+}

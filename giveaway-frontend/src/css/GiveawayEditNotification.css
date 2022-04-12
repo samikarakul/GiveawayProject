@@ -1,0 +1,58 @@
+.hide{
+    display: none;
+}
+.somePadding{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.editNotification-container{
+    z-index: 100;
+    background-color: orange;
+    min-height: 6vh;
+    max-width: 15vw;
+    color: #fff;
+    position: absolute;
+    right: -50vw;
+    top: 5vh;
+    opacity: 0;
+}
+.showAnimation{
+    animation-name: notification-leftToRight, notificationOpacity;
+    animation-duration: 6000ms, 1000ms;
+    animation-delay: 0ms, 5000ms;
+    animation-timing-function: ease-in, ease-out;
+}
+@keyframes notification-leftToRight {
+    0%{
+        opacity: 1;
+        right: -50vw;
+    }
+    10%{
+        opacity: 1;
+        right: 10vw;
+    }
+    100%{
+        opacity: 1;
+        right: 10vw;
+    }
+}
+@keyframes notificationOpacity {
+    0%{
+        right: 10vw;
+        opacity: 1;
+    }
+    100%{
+        right: -15vw;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .editNotification-container{
+        font-size: 1.3vh;
+        height: 4vh; 
+        z-index: 100;
+        top: -2vh;
+        opacity: 0;
+    }
+}

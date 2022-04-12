@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  --border-color: #e3e5e4;
+  --background-color: #c3c7ca;
+  --text-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.prizeOrderSortPage-container {
+  background-color: #fff;
+  margin: 5vh 0 0 0;
+  padding: 0 2vw 0 2vw;
+  font-family: 'Lato', sans-serif;
+  width: 75%;
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+}
+
+.draggable-list {
+  color: var(--text-color);
+  padding: 0;
+  list-style-type: none;
+}
+
+.draggable-list li {
+  background-color: #547288;
+  display: flex;
+  flex: 1;
+  margin-top: 50px;
+  padding: 15px;
+}
+
+
+
+.draggable-list .number {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  height: 60px;
+  width: 60px;
+}
+
+.draggable-list li.over .draggable {
+  background-color: #49657a;
+}
+
+.draggable-list .person-name {
+  margin: 0 20px 0 5vw;
+}
+
+.draggable-list li.right .person-name {
+  color: #3ae374;
+}
+
+.draggable-list li.wrong .person-name {
+  color: #ff3838;
+}
+
+.draggable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  flex: 1;
+}
+
+.prizeOrder-img{
+  width: 10vw;
+  height: 10vh;
+}
+
+
+.prizeOrder-saveButton{
+  width: 15vw;
+  height: 6vh;
+  font-size: 2vh;
+  border: none;
+  border-radius: 50px;
+  background-color: #47e2dc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.prizeOrder-saveButton:hover{
+  background-color: #30cec8;
+  color: #fff;
+  animation: saveButtonHover 1s;
+}
+
+@media screen and (max-width: 500px) {
+  .prizeOrderSortPage-container{
+    top: 2vh;
+  }
+  .draggable-list li {
+    margin-top: 20px;
+  }
+  
+  .draggable-list .person-name{
+    font-size: 3vw;
+  }
+
+  .prizeOrder-saveButton{
+    width: 25vw;
+    height: 6vh;
+    font-size: 2vh;
+  }
+}
+
+@keyframes saveButtonHover  {
+  0%{
+    border-radius: 50px;
+  }
+  50%{
+    border-radius: 0px;
+  }
+  100%{
+    border-radius: 50px;
+  }
+}
